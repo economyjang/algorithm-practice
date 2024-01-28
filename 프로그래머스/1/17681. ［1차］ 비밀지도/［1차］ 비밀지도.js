@@ -6,7 +6,6 @@ function solution(n, arr1, arr2) {
         
         row = row.toString(2)
                  .padStart(n, 0)
-                 .padEnd(n, 0)
                  .replace(/1/g, '#').replace(/0/g, ' ');
         answer.push(row);
     }
