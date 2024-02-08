@@ -10,7 +10,6 @@ function solution(want, number, discount) {
         const subArrMap = {};
         subArr.forEach((item) => subArrMap[item] = subArrMap[item] ? subArrMap[item] + 1 : 1);
         
-        
         if(Object.keys(wantMap).filter((key) => wantMap[key] !== subArrMap[key]).length === 0) answer++;
     }
     
